@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.breadcrumb {
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+/* Product Details */
+.product-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-image {
+    width: 220px; /* 设置宽度 */
+    height: 220px; /* 设置高度，与宽度相同 */
+    object-fit: cover; /* 图片按比例填充，裁剪多余部分 */
+    border-radius: 8px;
+}
+
+.description {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #28a745;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*.add-to-cart:hover {
+    background-color: #218838;
+} */
+
+/* Shopping Cart */
+.shopping-cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 120px; /* 默认宽度，仅显示标题 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease, padding 0.3s ease; /* 添加过渡效果 */
+    z-index: 1000;
+    overflow: hidden; /* 隐藏超出部分 */
+}
+
+.shopping-cart:hover {
+    width: 250px; /* 悬停时显示完整宽度 */
+    padding: 10px; /* 保持内边距一致 */
+}
+
+.shopping-cart h3 {
+    margin: 0;
+    font-size: 16px;
+    white-space: nowrap; /* 防止标题换行 */
+}
+
+.cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px; /* 标题和内容之间的间距 */
+}
+
+.cart-items li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-total {
+    font-weight: bold;
+}
+
+.checkout {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.checkout:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
